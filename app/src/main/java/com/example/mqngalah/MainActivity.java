@@ -28,10 +28,23 @@ public class MainActivity extends AppCompatActivity {
                 openactivity2();
             }
         });
+
+        button = (Button) findViewById(R.id.hukumnunsukundantanwin);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity3();
+            }
+        });
     }
+
     public void openactivity2(){
         Intent intent = new Intent(this, activity2.class);
         startActivity(intent);
     }
 
+    public void openactivity3(){
+        Intent intent = new Intent(this, activity3.class);
+        startActivity(intent);
+    }
 }

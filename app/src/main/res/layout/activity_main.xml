@@ -59,6 +59,27 @@
     <ScrollView
              android:layout_width="match_parent"
              android:layout_height="wrap_content" />
+         <Button
+             android:id="@+id/sanad"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="sanad"
+             android:layout_marginTop="220dp"
+             android:layout_centerHorizontal="true"
+             >
+
+         </Button>
+         <Button
+             android:id="@+id/riwayat"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="riwayat"
+             android:layout_marginTop="220dp"
+             android:layout_marginLeft="265dp"
+             >
+
+         </Button>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

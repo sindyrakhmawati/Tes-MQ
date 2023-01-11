@@ -135,4 +135,29 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, activity3.class);
         startActivity(intent);
     }
+    
+    public void openactivity4(){
+        Intent intent = new Intent(this, activity4.class);
+        startActivity(intent);
+    }
+
+    public void openactivity5(){
+        Intent intent = new Intent(this, activity5.class);
+        startActivity(intent);
+    }
+
+    public void openprofil(){
+        Intent intent = new Intent(this, profil.class);
+        startActivity(intent);
+    }
+
+    public void opensanad(){
+        Intent intent = new Intent(this, sanad.class);
+        startActivity(intent);
+    }
+
+    public void openriwayat(){
+        Intent intent = new Intent(this, riwayat.class);
+        startActivity(intent);
+    }
 }

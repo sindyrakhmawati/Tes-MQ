@@ -36,6 +36,94 @@ public class MainActivity extends AppCompatActivity {
                 openactivity3();
             }
         });
+        
+        button = (Button) findViewById(R.id.hukummimsukun);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity4();
+            }
+        });
+
+        button = (Button) findViewById(R.id.idghom);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity5();
+            }
+        });
+
+        button = (Button) findViewById(R.id.ikhfajadid);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity6();
+            }
+        });
+
+        button = (Button) findViewById(R.id.hukumlamtarif);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity7();
+            }
+        });
+
+        button = (Button) findViewById(R.id.hukumlamjalalah);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity8();
+            }
+        });
+
+        button = (Button) findViewById(R.id.hukumro);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity9();
+            }
+        });
+
+        button = (Button) findViewById(R.id.qolqolah);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity10();
+            }
+        });
+
+        button = (Button) findViewById(R.id.hukummad);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity11();
+            }
+        });
+
+        button = (Button) findViewById(R.id.profil);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openprofil();
+            }
+        });
+
+        button = (Button) findViewById(R.id.sanad);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opensanad();
+            }
+        });
+
+        button = (Button) findViewById(R.id.riwayat);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openriwayat();
+            }
+        });
     }
 
     public void openactivity2(){

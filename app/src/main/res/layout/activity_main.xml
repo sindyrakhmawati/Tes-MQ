@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <ScrollView
+     <ScrollView
      android:layout_width="fill_parent"
      android:layout_height="fill_parent" >
      <RelativeLayout
          android:layout_width="fill_parent"
          android:layout_height="fill_parent" >
 
-     </RelativeLayout>
          <ImageView
              android:id="@+id/gambaratas"
              android:layout_width="match_parent"
@@ -55,26 +54,21 @@
              android:textSize="11pt"
              >
          </TextView>
-         <ScrollView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content" />
-         <RelativeLayout
-             android:layout_width="fill_parent"
-             android:layout_height="fill_parent">
              <Button
                  android:id="@+id/profil"
-                 android:layout_width="wrap_content"
-                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
                  android:text="profil"
                  android:layout_marginTop="220dp"
+                 android:layout_marginRight="275dp"
+                 android:layout_marginLeft="1dp"
                  >
-
              </Button>
 
              <Button
                  android:id="@+id/sanad"
                  android:layout_width="wrap_content"
-                 android:layout_height="match_parent"
+                 android:layout_height="wrap_content"
                  android:text="sanad"
                  android:layout_marginTop="220dp"
                  android:layout_centerHorizontal="true"
@@ -83,11 +77,12 @@
              </Button>
              <Button
                  android:id="@+id/riwayat"
-                 android:layout_width="wrap_content"
-                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
                  android:text="riwayat"
                  android:layout_marginTop="220dp"
-                 android:layout_marginLeft="310dp"
+                 android:layout_marginLeft="275dp"
+                 android:layout_marginRight="1dp"
                  >
              </Button>
              <Button

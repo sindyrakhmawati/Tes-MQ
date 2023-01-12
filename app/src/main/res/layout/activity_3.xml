@@ -6,4 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".activity3">
 
+    <ScrollView
+        android:layout_width="2000dp"
+        android:layout_height="2000dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/satu"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/nunsukundantanwin"
+                android:layout_marginTop="0dp">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/idhgombigunnah">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/idghombilagunnah">
+
+            </ImageView>
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="600dp"
+     android:src="@drawable/iqlab">
+
+ </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/ikhfa">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/ikhfaada3">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/ikhfaadatiga2">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </RelativeLayout>

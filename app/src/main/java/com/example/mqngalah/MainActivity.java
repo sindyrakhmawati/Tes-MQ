@@ -116,14 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 opensanad();
             }
         });
-
-        button = (Button) findViewById(R.id.riwayat);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openriwayat();
-            }
-        });
     }
 
     public void openactivity2(){
@@ -202,7 +194,12 @@ public class MainActivity extends AppCompatActivity {
     public void stop(View v) {
         stopPlayer();
     }
-
+    
+    public void pause(View v) {
+        if (player != null) {
+            player.pause();
+        }
+    }
     private  void  stopPlayer(){
         if (player != null) {
             player.release();

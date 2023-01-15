@@ -185,11 +185,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, sanad.class);
         startActivity(intent);
     }
-
-    public void openriwayat(){
-        Intent intent = new Intent(this, riwayat.class);
-        startActivity(intent);
-    }
     
     public void play(View v) {
         if (player == null) {

@@ -190,4 +190,35 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, riwayat.class);
         startActivity(intent);
     }
+    
+    public void play(View v) {
+        if (player == null) {
+            player = MediaPlayer.create(this, R.raw.makhrotan);
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    stopPlayer();
+                }
+            });
+        }
+        player.start();
+    }
+    
+    public void stop(View v) {
+        stopPlayer();
+    }
+
+    private  void  stopPlayer(){
+        if (player != null) {
+            player.release();
+            player = null;
+            Toast.makeText(this, "MediaPlayer Stop", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopPlayer();
+    }
 }

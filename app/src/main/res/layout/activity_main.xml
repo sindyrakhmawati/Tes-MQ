@@ -28,33 +28,51 @@
              android:contentDescription="@string/Todo">
 
          </ImageView>
+         <ImageView
+                android:id="@+id/play"
+                android:layout_width="800dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/gambaratas"
+                android:layout_marginTop="52dp"
+                android:src="@drawable/play1">
 
-         <TextView
-             android:id="@+id/belajartajwid"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="40dp"
-             android:layout_marginTop="80dp"
-             android:fontFamily="@font/acme"
-             android:text="@string/belajar_tajwid"
-             android:textColor="#ffffff"
-             android:textSize="11pt"
-             android:textStyle="bold">
+          </ImageView>
+          <ImageView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:src="@drawable/makhroj"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/gambaratas">
 
-         </TextView>
+          </ImageView>
+         
+          <TextView
+                android:id="@+id/belajartajwid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/acme"
+                android:text="@string/belajar_tajwid"
+                android:textColor="#ffffff"
+                android:textSize="11pt"
+                android:textStyle="bold">
 
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:textColor="#ffffff"
-             android:text="@string/metode_ngalah"
-             android:fontFamily="@font/acme"
-             android:layout_below="@id/belajartajwid"
-             android:layout_marginStart="40dp"
-             android:textSize="11pt"
-             >
-         </TextView>
-             <Button
+           </TextView>
+
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="@string/metode_ngalah"
+                android:fontFamily="@font/acme"
+                android:layout_below="@id/belajartajwid"
+                android:layout_marginStart="40dp"
+                android:textSize="11pt"
+                >
+           </TextView>
+           <Button
                  android:id="@+id/profil"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
@@ -63,9 +81,9 @@
                  android:layout_marginRight="275dp"
                  android:layout_marginLeft="1dp"
                  >
-             </Button>
+            </Button>
 
-             <Button
+            <Button
                  android:id="@+id/sanad"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
@@ -74,18 +92,8 @@
                  android:layout_centerHorizontal="true"
                  >
 
-             </Button>
-             <Button
-                 android:id="@+id/riwayat"
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="riwayat"
-                 android:layout_marginTop="220dp"
-                 android:layout_marginLeft="275dp"
-                 android:layout_marginRight="1dp"
-                 >
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:id="@+id/hukummimdannunbertasdid"
                  android:layout_width="match_parent"
                  android:layout_height="59dp"
@@ -94,24 +102,24 @@
                  android:text="@string/hukum_mim_dan_nun_bertasdid"
                  tools:ignore="NotSibling">
 
-             </Button>
+            </Button>
 
-             <Button
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:id="@+id/hukumnunsukundantanwin"
                  android:text="@string/hukum_nun_sukun_dan_tanwin"
                  android:layout_below="@id/hukummimdannunbertasdid">
 
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="@string/hukum_mim_sukun"
                  android:id="@+id/hukummimsukun"
                  android:layout_below="@id/hukumnunsukundantanwin">
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:id="@+id/idghom"
@@ -119,24 +127,24 @@
                  android:text="@string/idghom"
                  >
 
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:id="@+id/ikhfajadid"
                  android:text="@string/ikhfa_jadid"
                  android:layout_below="@id/idghom"
                  >
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="@string/hukum_lam_ta_rif"
                  android:id="@+id/hukumlamtarif"
                  android:layout_below="@id/ikhfajadid"
                  >
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="@string/hukum_lam_jalalah"
@@ -144,8 +152,8 @@
                  android:layout_below="@id/hukumlamtarif"
                  >
 
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="@string/hukum_ro"
@@ -153,8 +161,8 @@
                  android:layout_below="@id/hukumlamjalalah"
                  >
 
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="@string/qolqolah"
@@ -162,8 +170,8 @@
                  android:layout_below="@id/hukumro"
                  >
 
-             </Button>
-             <Button
+            </Button>
+            <Button
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:text="@string/hukum_mad"
@@ -171,7 +179,7 @@
                  android:layout_below="@id/qolqolah"
                  >
 
-             </Button>
+            </Button>
      </RelativeLayout>
     </ScrollView>    
 

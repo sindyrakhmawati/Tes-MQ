@@ -1,21 +1,4 @@
 <resources>
-    <string name="app_name">MQ Ngalah</string>
-    <string name="menu_profile"> Profile MQ Ngalah</string>
-    <string name="menu_riwayat">Riwayat membaca</string>
-    <string name="todo">TODO</string>
-    <string name="metode_ngalah">Metode NGALAH</string>
-    <string name="belajar_tajwid">Belajar Tajwid</string>
-    <string name="hukum_mim_dan_nun_bertasdid">hukum mim dan nun bertasdid</string>
-    <string name="hukum_nun_sukun_dan_tanwin">hukum nun sukun dan tanwin</string>
-    <string name="hukum_mim_sukun">hukum mim sukun</string>
-    <string name="idghom">idghom</string>
-    <string name="hukum_lam_ta_rif">hukum lam ta\'rif</string>
-    <string name="hukum_lam_jalalah">hukum lam jalalah</string>
-    <string name="hukum_ro">hukum ro\'</string>
-    <string name="qolqolah">qolqolah</string>
-    <string name="ikhfa_jadid">ikhfa\' jadid</string>
-    <string name="hukum_mad">hukum mad</string>
-    <string name="Todo">TODO</string>
-
+    <string name="app_name">Tajwid NGALAH</string>
 
 </resources>

@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity11">
+    
+    <ScrollView
+        android:layout_width="2000dp"
+        android:layout_height="2000dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/hukummad">
 
-</LinearLayout>
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/madfari">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/madaridlisukun">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/madsila">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/madsilathawilah">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/madlazim">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/madlin">
+
+            </ImageView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

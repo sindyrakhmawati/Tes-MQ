@@ -73,37 +73,6 @@
                 >
            </TextView>
            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Play"
-                android:onClick="Play"
-                android:layout_marginLeft="30dp"
-                android:layout_below="@id/gambaratas"
-                android:layout_marginTop="90dp">
-
-           </Button>
-           
-           <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pause"
-                android:onClick="Pause"
-                android:layout_below="@id/gambaratas"
-                android:layout_marginTop="90dp"
-                android:layout_centerHorizontal="true">
-
-           </Button>
-           <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop"
-                android:onClick="Stop"
-                android:layout_marginLeft="290dp"
-                android:layout_below="@id/gambaratas"
-                android:layout_marginTop="90dp">
-
-           </Button>
-           <Button
                  android:id="@+id/profil"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"

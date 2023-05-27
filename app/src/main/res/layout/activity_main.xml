@@ -4,7 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scrol"
+        android:layout_centerInParent="true"
+        tools:listitem="@layout/list_item" />
+    
      <ScrollView
+     android:id="@+id/scrol"
      android:layout_width="fill_parent"
      android:layout_height="fill_parent" >
      <RelativeLayout
@@ -75,93 +85,6 @@
                 android:text="sanad"
                 android:layout_below="@id/gambaratas"
                 android:layout_marginLeft="295dp">
-
-            </Button>
-            <Button
-                 android:id="@+id/hukummimdannunbertasdid"
-                 android:layout_width="match_parent"
-                 android:layout_height="59dp"
-                 android:layout_below="@id/gambaratas"
-                 android:layout_marginTop="45dp"
-                 android:text="@string/hukum_mim_dan_nun_bertasdid"
-                 tools:ignore="NotSibling">
-
-            </Button>
-
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:id="@+id/hukumnunsukundantanwin"
-                 android:text="@string/hukum_nun_sukun_dan_tanwin"
-                 android:layout_below="@id/hukummimdannunbertasdid">
-
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="@string/hukum_mim_sukun"
-                 android:id="@+id/hukummimsukun"
-                 android:layout_below="@id/hukumnunsukundantanwin">
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:id="@+id/idghom"
-                 android:layout_below="@id/hukummimsukun"
-                 android:text="@string/idghom"
-                 >
-
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:id="@+id/ikhfajadid"
-                 android:text="@string/ikhfa_jadid"
-                 android:layout_below="@id/idghom"
-                 >
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="@string/hukum_lam_ta_rif"
-                 android:id="@+id/hukumlamtarif"
-                 android:layout_below="@id/ikhfajadid"
-                 >
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="@string/hukum_lam_jalalah"
-                 android:id="@+id/hukumlamjalalah"
-                 android:layout_below="@id/hukumlamtarif"
-                 >
-
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="@string/hukum_ro"
-                 android:id="@+id/hukumro"
-                 android:layout_below="@id/hukumlamjalalah"
-                 >
-
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="@string/qolqolah"
-                 android:id="@+id/qolqolah"
-                 android:layout_below="@id/hukumro"
-                 >
-
-            </Button>
-            <Button
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="@string/hukum_mad"
-                 android:id="@+id/hukummad"
-                 android:layout_below="@id/qolqolah"
-                 >
 
             </Button>
      </RelativeLayout>

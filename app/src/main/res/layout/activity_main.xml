@@ -22,9 +22,8 @@
              android:layout_width="175dp"
              android:layout_height="114dp"
              android:src="@drawable/logomq"
-             android:layout_alignEnd="@id/gambaratas"
              android:layout_marginTop="50dp"
-             android:layout_marginEnd="10dp"
+             android:layout_marginLeft="250dp"
              android:contentDescription="@string/Todo">
 
          </ImageView>

@@ -12,12 +12,24 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mqngalah.R;
+import com.example.mqngalah.activity10;
+import com.example.mqngalah.activity11;
+import com.example.mqngalah.activity2;
+import com.example.mqngalah.activity3;
+import com.example.mqngalah.activity4;
+import com.example.mqngalah.activity5;
+import com.example.mqngalah.activity6;
+import com.example.mqngalah.activity7;
+import com.example.mqngalah.activity8;
+import com.example.mqngalah.activity9;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
 public class AdapterRecyclerView  extends RecyclerView.Adapter<AdapterRecyclerView.viewHolder> {
-    private final ArrayList<ItemModel> dataitem;
+    private final ArrayList<com.ella.reycicle.ItemModel> dataitem;
 
     private final Context context;
 
@@ -38,7 +50,7 @@ public class AdapterRecyclerView  extends RecyclerView.Adapter<AdapterRecyclerVi
         }
     }
 
-    AdapterRecyclerView(Context context,ArrayList<ItemModel> dataitem) {
+    public AdapterRecyclerView(Context context, ArrayList<com.ella.reycicle.ItemModel> dataitem) {
         this.context = context;
         this.dataitem = dataitem;
     }

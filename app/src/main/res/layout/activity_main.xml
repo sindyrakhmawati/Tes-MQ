@@ -29,31 +29,29 @@
 
          </ImageView>
          
-          <TextView
-                android:id="@+id/belajartajwid"
+         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="80dp"
-                android:fontFamily="@font/acme"
-                android:text="@string/belajar_tajwid"
+                android:text="TES KENAIKAN JENJANG"
                 android:textColor="#ffffff"
-                android:textSize="11pt"
+                android:textSize="9pt"
                 android:textStyle="bold">
 
-           </TextView>
+            </TextView>
 
            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="110dp"
+                android:text="MQ NGALAH"
                 android:textColor="#ffffff"
-                android:text="@string/metode_ngalah"
-                android:fontFamily="@font/acme"
-                android:layout_below="@id/belajartajwid"
-                android:layout_marginStart="40dp"
                 android:textSize="11pt"
-                >
-           </TextView>
+                android:textStyle="bold">
+
+            </TextView>
            <Button
                  android:id="@+id/profil"
                  android:layout_width="match_parent"

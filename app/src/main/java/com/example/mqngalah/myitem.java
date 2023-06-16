@@ -7,10 +7,10 @@ public class myitem {
     };
 
     static String[] Headline = {
-            "Hukum Mim dan Nun Bertasyid", "Hukum Nun Sukun dan Tanwin", "Hukum Mim Sukun", "Idghom", "Ikhfa' Jadid", "Hukum Lam Ta'rif", "Hukum Lam Jalalah", "Hukum Ro'", "Qolqolah", "Hukum Mad"
+            "JILID 1", "JILID 2", "JILID 3", "TAJWID", "GHORIB", "PASCA SANAD", "PASCA KHOTMIL QUR'AN"
     };
 
     static String[] Subheadline = {
-            "Selengkapnya", "Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya"
+            "Selengkapnya", "Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya","Selengkapnya"
     };
 }

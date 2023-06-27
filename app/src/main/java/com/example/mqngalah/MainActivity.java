@@ -1,17 +1,27 @@
 package com.example.mqngalah;
 
+import android.annotation.SuppressLint;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.widget.Button;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 import java.util.ArrayList;
-import android.content.Intent;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -87,3 +97,20 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
+        Intent notificationIntent = new Intent(this, NotificationActivity.class);
+        notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        @SuppressLint("UnspecifiedImmutableFlag") PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE);
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, id)
+                .setSmallIcon(R.drawable.ic_notifications)
+                .setContentTitle("Jadwal Tes")
+                .setContentText("Ini adalah Jadwal Tes MQ Ngalah")
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setVibrate(new long[]{100, 1000, 200, 340})
+                .setAutoCancel(false)//true touch on notification menu dismissed, but swipe to dismiss
+                .setTicker("Notification");
+        builder.setContentIntent(contentIntent);
+        NotificationManagerCompat m = NotificationManagerCompat.from(getApplicationContext());
+        m.notify(1, builder.build());
+
+    }
+}

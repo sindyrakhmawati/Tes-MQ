@@ -69,40 +69,21 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewAdapter = new AdapterRecyclerView(this, data);
         recyclerView.setAdapter(recyclerViewAdapter);
     }
-    public void play(View v) {
-        if (player == null) {
-            player = MediaPlayer.create(this, R.raw.makhrotan);
-            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    stopPlayer();
-                }
-            });
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void createNotif() {
+        String id = "notifikasi";
+        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            NotificationChannel channel = manager.getNotificationChannel(id);
+            if (channel == null) {
+                channel = new NotificationChannel(id, "Jadwal Tes MQ", NotificationManager.IMPORTANCE_HIGH);
+                //config notification channel
+                channel.setDescription("[Channel description]");
+                channel.enableVibration(true);
+                channel.setVibrationPattern(new long[]{100, 1000, 200, 340});
+                channel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+                manager.createNotificationChannel(channel);
 
+
+            }
         }
-        player.start();
-    }
-
-    public void pause(View v) {
-        if (player != null){
-            player.pause();
-        }
-    }
-
-    public void stop(View v) {
-        stopPlayer();
-    }
-
-    private void stopPlayer() {
-        if (player != null){
-            player.release();
-            player =null;
-        }
-    }
-    @Override
-    protected void onStop(){
-        super.onStop();
-        stopPlayer();
-    }
-
-}

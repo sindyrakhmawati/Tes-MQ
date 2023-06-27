@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     private Button profilButton;
     private Button sanadButton;
 
-    MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+         Button btn = findViewById(R.id.btn);
+        btn.setOnClickListener(view -> createNotif());
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void createNotif() {
-        String id = "notifikasi";
+        String id = "Jadwal Tes";
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             NotificationChannel channel = manager.getNotificationChannel(id);
